@@ -50,8 +50,8 @@ android.libraryVariants.all { variant ->
         exclude '**/R.class'
         exclude '**/R\$*.class'
         exclude '**/Manifest.class'
-        exclude '**/Manifest\$*.class'
-        exclude '**/BuildConfig.class'
+
+
     }
 
     if (name.equals(BuilderConstants.RELEASE)) {
@@ -59,7 +59,7 @@ android.libraryVariants.all { variant ->
     }
 }
 
-//region Maven
+//region
 
 apply plugin: 'maven'
 apply plugin: 'signing'
